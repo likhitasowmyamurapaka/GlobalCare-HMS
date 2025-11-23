@@ -200,21 +200,21 @@
     }
 }
 
-.fruits{
+.services{
     aspect-ratio: 3/3;
     width: 70%;
 }
 
-#services{
+#service{
     padding: 20px;
 }
 
-#services a{
+#service a{
     text-decoration: none;
     color:#479fcf;
 }
 
-.box{
+.box2{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
     height:100%;
@@ -222,13 +222,13 @@
     padding: 10px;
 }
 
-.box h4{
+.box2 h4{
     margin-top: 10px;
     margin-bottom: 10px;
     color: #479fcf;
 }
 
-.box h4:hover{
+.box2 h4:hover{
     color: #216b91;
 }
 
@@ -288,7 +288,7 @@ img:hover{
     #department img{
         width: 40%;   
     }
-    .box a{
+    .box2 a{
     border: 1px solid blueviolet;
     display: flex;
     flex-direction:row;

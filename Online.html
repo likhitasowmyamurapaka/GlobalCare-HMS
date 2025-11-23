@@ -20,11 +20,11 @@
 
         <label>Primary Symptom</label>
         <select form-control id="symptom" required>
-             <option value="" disabled selected>-- select --</option>
-             <option value="abdominal pain">Abdominal pain</option>
-             <option value="chest-pain">Chest Pain</option>
-             <option value="dehydration">Dehydration</option>
-             <option value="dizziness">Dizziness</option>
+            <option value="" disabled selected>-- select --</option>
+            <option value="abdominal pain">Abdominal pain</option>
+            <option value="chest-pain">Chest Pain</option>
+            <option value="dehydration">Dehydration</option>
+            <option value="dizziness">Dizziness</option>
             <option value="fever">Fever</option>
             <option value="injury">Injury</option>
             <option value="insomnia">Insomnia</option>
@@ -33,7 +33,33 @@
         </select>
 
         <label>Doctor Consulted</label>
-        <input id="doctor" placeholder="Eg:Satya" required />
+            <select class="form-select" aria-label="Select Doctor">
+                <option selected>Select Doctor</option>
+                <option value="">Dr. Harsha Vardhan</option>
+                <option value="">Dr. Pardha Gopikrishna</option>
+                <option value="">Dr. Bharat Simha</option>
+                <option value="">Dr. Akhila</option>
+                <option value="">Dr. Anil</option>
+                <option value="">Dr. Kharan</option>
+                <option value="">Dr. Likhita Sowmya</option>
+                <option value="">Dr. Sharon Rose</option>
+                <option value="">Dr. Sriram</option>
+                <option value="">Dr. Chakrapani</option>
+                <option value="">Dr. Devi</option>
+                <option value="">Dr. Sidharth</option>
+                <option value="">Dr. Abdul Jabbar</option>
+                <option value="">Dr. Eswar</option>
+                <option value="">Dr. Aftab</option>
+                <option value="">Dr. Basha</option>
+                <option value="">Dr. Sairam</option>
+                <option value="">Dr. Ramesh</option>
+                <option value="">Dr. Kumar</option>
+                <option value="">Dr. Prathap</option>
+                <option value="">Dr. Kiran</option>
+                <option value="">Dr. Sandeep Iyer</option>
+                <option value="">Dr. Mahesh</option>
+                <option value="">Dr. Suryanarayana</option>
+            </select>
 
         <label>Tests Done</label>
         <select form-control id="tests" required>
@@ -48,7 +74,7 @@
             <option value="None">None</option>
         </select>
 
-        <button type="button" onclick="generateReport()">Generate Report</button>
+        <button class="btn">Generate Report</button>
        
     </form>
     </div>

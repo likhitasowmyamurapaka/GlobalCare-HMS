@@ -1,29 +1,23 @@
 *{
     margin:0;
     font-family: sans-serif;
-    /* border:1px solid black; */
 }
 
 .online-section{
     display: flex;
-    /* flex-direction: row; */
      justify-content: center; 
     align-items: center;
     gap: 20px;  
     height: 100vh;
     padding-left:50px;
-    /* border:1px solid black; */
 }
 
 .mydata{
-    border:1px solid blue;
-    /* margin-left:20%; */
+    border:1px solid #479fcf;
     width:30%;
-    
     padding: 20px;
     box-shadow: 2px 3px 15px whitesmoke;
     border-radius: 5px;
-    /* margin-top: 5%; */
 }
 .mydata h1{
     text-align: center;
@@ -49,6 +43,7 @@
     padding: 7px;
     border-radius: 5px;
     margin-bottom: 2%;
+    cursor: pointer;
 }
 .btn a{
     text-decoration: none;
@@ -82,16 +77,7 @@ select {
 }
 .image{
     margin:0;
-    /* border:1px solid red; */
     width: 50%;
-
-}
-
-.image img{
-    /* margin-top: 5%;
-    margin-left: 5%; */
-    /* width: 850px; */
-    /* height: auto; */
 }
 
 @media all and (min-width:992px) and (max-width:1200px){

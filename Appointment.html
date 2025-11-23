@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Global Care - Your Final Destination</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./src/favicon.png"/>
+    <script
+      src="https://kit.fontawesome.com/452e16b726.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="z-index: 10; background-color: azure; width: 100vw; height: auto">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./src/logo-removebg4.png" alt="" width="auto" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html#home" style="color: royalblue;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about" style="color: royalblue">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#department" style="color: royalblue">Departments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#doctor" style="color: royalblue">Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#service" style="color: royalblue">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact" style="color: royalblue;">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex me-3">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#emergency" style="color: royalblue;">Emergency</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="# " style="color: royalblue">Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-center" style="padding-top: 6%">Book Appointment</h1>
+    <h3>
+      <sub style=" margin-left: 45%">Right Now</sub>
+    </h3>
+    <main class="container " >
+        <div class="row">
+            <form >
+                <div class="mt-3 mb-3 ">
+                    <select class="form-select" aria-label="Select Department">
+                    <option selected>Select Department</option>
+                    <option value="">Cardiology</option>
+                    <option value="">Neurology</option>
+                    <option value="">Orthopedics</option>
+                    <option value="">Gynaecology</option>
+                    <option value="">Pediatrics</option>
+                    <option value="">Dermatology</option>
+                    <option value="">Dentistry</option>
+                    <option value="">Radiology</option>
+                    <option value="">Nephrology</option>
+                    <option value="">Gastroenterology</option>
+                    <option value="">Ent</option>
+                    <option value="">Pulmonology</option>
+                    </select>
+                </div>
+                <div class="mt-3 mb-3 ">
+                    <select class="form-select" aria-label="Select Doctor">
+                    <option selected>Select Doctor</option>
+                    <option value="">Dr. Harsha Vardhan</option>
+                    <option value="">Dr. Pardha Gopikrishna</option>
+                    <option value="">Dr. Bharat Simha</option>
+                    <option value="">Dr. Akhila</option>
+                    <option value="">Dr. Anil</option>
+                    <option value="">Dr. Kharan</option>
+                    <option value="">Dr. Likhita Sowmya</option>
+                    <option value="">Dr. Sharon Rose</option>
+                    <option value="">Dr. Sriram</option>
+                    <option value="">Dr. Chakrapani</option>
+                    <option value="">Dr. Devi</option>
+                    <option value="">Dr. Sidharth</option>
+                    <option value="">Dr. Abdul Jabbar</option>
+                    <option value="">Dr. Eswar</option>
+                    <option value="">Dr. Aftab</option>
+                    <option value="">Dr. Basha</option>
+                    <option value="">Dr. Sairam</option>
+                    <option value="">Dr. Ramesh</option>
+                    <option value="">Dr. Kumar</option>
+                    <option value="">Dr. Prathap</option>
+                    <option value="">Dr. Kiran</option>
+                    <option value="">Dr. Sandeep Iyer</option>
+                    <option value="">Dr. Mahesh</option>
+                    <option value="">Dr. Suryanarayana</option>
+                    </select>
+                </div>
+                <div class="mt-3 mb-3 ">
+                    <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Name"
+                    required
+                    />
+                </div>
+                <div class="mt-3 mb-3 ">
+                    <input type="tel" class="form-control" placeholder="Phone" required/>
+                </div>
+                <button class="mb-3" id="book-bt" type="submit">Book Now</button>
+            </form>
+        </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

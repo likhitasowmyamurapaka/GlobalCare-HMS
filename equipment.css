@@ -1,0 +1,52 @@
+*{
+  font-family: sans-serif;
+}
+
+.equipment-section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.equipment-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f7f9fa;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.equipment-box img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.equip-text {
+  width: 60%;
+}
+
+.equip-text h3 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #0a4b78;
+}
+
+@media (max-width: 768px) {
+  .equipment-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .equipment-box img {
+    width: 100%;
+  }
+
+  .equip-text {
+    width: 100%;
+  }
+}

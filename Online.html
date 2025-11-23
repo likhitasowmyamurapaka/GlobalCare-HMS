@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Report</title>
+    <link rel="stylesheet" href="online.css" />
+    <link rel="icon" href="./src/favicon.png"/>
+</head>
+<body>
+    <section class="online-section d-flex flex-sm-column flex-md-column flex-lg-row align-items-center justify-content-center">
+    <div class="mydata">
+    <h1 style="color: #479fcf;">Patient Details</h1>
+    <form class="myform">
+        <label>Patient Name</label>
+        <input id="pname" placeholder="Eg:Ravi" required />
+
+        <label>Patient Id</label>
+        <input id="pid" placeholder="Eg:P1"required />
+
+        <label>Primary Symptom</label>
+        <select form-control id="symptom" required>
+             <option value="" disabled selected>-- select --</option>
+             <option value="abdominal pain">Abdominal pain</option>
+             <option value="chest-pain">Chest Pain</option>
+             <option value="dehydration">Dehydration</option>
+             <option value="dizziness">Dizziness</option>
+            <option value="fever">Fever</option>
+            <option value="injury">Injury</option>
+            <option value="insomnia">Insomnia</option>
+            <option value="shortness of breath">Shortness of breath</option>
+            <option value="severe headache">Severe Headache</option>
+        </select>
+
+        <label>Doctor Consulted</label>
+        <input id="doctor" placeholder="Eg:Satya" required />
+
+        <label>Tests Done</label>
+        <select form-control id="tests" required>
+            <option value="" disabled selected>-- select --</option>
+            <option value="Blood Test">Blood Test</option>
+            <option value="X-ray">X-ray</option>
+            <option value="CT Scan">CT Scan</option>
+            <option value="MRI">MRI</option>
+            <option value="Urine Test">Urine Test</option>
+            <option value="ECG">ECG</option>
+            <option value="Ultrasound">Ultrasound</option>
+            <option value="None">None</option>
+        </select>
+
+        <button type="button" onclick="generateReport()">Generate Report</button>
+       
+    </form>
+    </div>
+    <div class="image">
+        <img src="./src/1.2.jpg" alt="" width="100%" style="float: right;"/>
+    </div>
+    </section>
+    
+
+    <div id="resultBox" class="output" style="display:none;"></div>
+    <script src="generate_report.js"></script>
+
+</body>
+</html>

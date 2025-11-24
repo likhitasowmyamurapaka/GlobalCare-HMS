@@ -1,23 +1,24 @@
 *{
-    margin:0;
     font-family: sans-serif;
+    /* border:1px solid black; */
 }
 
-.online-section{
+.visit-section{
     display: flex;
-     justify-content: center; 
     align-items: center;
-    gap: 20px;  
+    gap: 20px;
+    justify-content: center;
     height: 100vh;
-    padding-left:50px;
+    padding-left: 50px;
 }
 
 .mydata{
-    border:1px solid #479fcf;
-    width:30%;
+   
+    width:400px;
     padding: 20px;
-    box-shadow: 2px 3px 15px whitesmoke;
+    box-shadow: 2px 3px 20px grey;
     border-radius: 5px;
+    /* margin-top: 5%; */
 }
 .mydata h1{
     text-align: center;
@@ -26,7 +27,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 5%;
-    height: 80%;
 }
 .myform input{
     padding: 8px;
@@ -43,78 +43,42 @@
     padding: 7px;
     border-radius: 5px;
     margin-bottom: 2%;
-    cursor: pointer;
 }
+
 .btn a{
     text-decoration: none;
     color: white;
     font-size: 16px;
 }
 
-.btn2{
-    background-color: white;
-    padding:7px;
-    border:1px solid grey;
-    border-radius: 5px;
-    cursor: pointer;
-
-}
-
-.btn2:hover{
-    border:1px solid #479fcf;
-    
-}
-
-.btn2:active{
-    background-color: #b3c7f7;
-}
-
-.btn2 a{
-    text-decoration: none;
-    color:#479fcf;
-}
-
-
-#tests{
+.tests{
     margin-top: 2px;
     margin-bottom: 2%;
 }
+
 select {
     width: 100%;
     padding: 10px;
-    height: 40px;
+    height: 37px;
     font-size: 16px;
     border: 1px solid #808080;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
-#symptom{
+.symptoms{
     margin-top: 2px;
     margin-bottom: 2%;
 
-}
-
-#branch{
-    margin-top: 2px;
-    margin-bottom: 2%;
 }
 .image{
     margin:0;
-    width: 50%;
 }
 
-@media all and (min-width:992px) and (max-width:1200px){
-    .online-section{    
-        display:flex;
-        flex-direction: row;
-    }
-}
-
-@media all and (min-width:768px) and (max-width:992px){
-    .myform{
-        height: 70%;
-    }
+.image img{
+    width: 450px;
+    height: auto;
+    /* border: 1px solid black; */
 }
 
 @media all and (min-width:576px) and (max-width:768px){

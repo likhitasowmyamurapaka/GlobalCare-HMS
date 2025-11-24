@@ -13,24 +13,10 @@
     <h1 style="color: #479fcf;">Patient Details</h1>
     <form class="myform">
         <label>Patient Name</label>
-        <input id="pname" placeholder="Eg:Ravi" required />
+        <input type="text" placeholder="Eg:Ravi" required />
 
         <label>Patient Id</label>
-        <input id="pid" placeholder="Eg:P1"required />
-
-        <label>Primary Symptom</label>
-        <select form-control id="symptom" required>
-            <option value="" disabled selected>-- select --</option>
-            <option value="abdominal pain">Abdominal pain</option>
-            <option value="chest-pain">Chest Pain</option>
-            <option value="dehydration">Dehydration</option>
-            <option value="dizziness">Dizziness</option>
-            <option value="fever">Fever</option>
-            <option value="injury">Injury</option>
-            <option value="insomnia">Insomnia</option>
-            <option value="shortness of breath">Shortness of breath</option>
-            <option value="severe headache">Severe Headache</option>
-        </select>
+        <input type="text" placeholder="Eg:P1"required />
 
         <label>Doctor Consulted</label>
             <select class="form-select" aria-label="Select Doctor">
@@ -75,6 +61,8 @@
         </select>
 
         <button class="btn">Generate Report</button>
+
+        <button class="btn2"><a href="index.html">Back to Home</a></button>
        
     </form>
     </div>

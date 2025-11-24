@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="welcome-wrapper">
+    <!-- <div class="welcome-wrapper">
         <input type="checkbox" id="hideWelcome">
         <div class="welcome-screen">
             <label for="hideWelcome" class="curve">
@@ -23,9 +23,9 @@
             </label>
             <img src="./src/backcover.jpg" class="bg-img" alt="">
         </div>
-    </div>
+    </div>   -->
 
-    <nav class="navbar navbar-expand-lg navbar-light " style="z-index: 10; background-color: azure; width: 100vw;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 10; background-color: azure; width: 100vw;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="./src/logo.png" alt="" width="140" />
@@ -60,7 +60,7 @@
                 <div class="d-flex">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#emergency" style="color: royalblue;">Emergency</a>
+                            <a class="nav-link" href="#awareness" style="color: royalblue;">Awareness</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Appointment.html" style="color: royalblue;">Appointment</a>
@@ -71,13 +71,13 @@
         </div>
     </nav>
     
-    <span>
+    <span id="home">
         <video src="./src/home_page.mp4" style="width: 100vw; z-index: 0;" autoplay muted loop>
         </video>
     </span>
 
-    <section id="about">
-        <h2 style="text-align: center; color: #479fcf;">About</h2>
+    <section id="about" style="margin-top: 5%;">
+        <h2 style="text-align: center; padding-top: 6%; ">About</h2>
         <div class="hospital-about-section">
     <div class="hospital-image-container">
         <img src="./src/hospital.png" alt="GlobalCare Hospital" class="hospital-img">
@@ -97,17 +97,17 @@
 </div>
         <div class="card-container">
             <div class="card">
-                <div class="brief">Patient-Centered Care Philosophy</div>
+                <div class="brief"  style="color: teal;">Patient-Centered Care Philosophy</div>
                 <div class="details">We believe that every patient deserves personalized attention and dignity.Our approach ensures that treatment plans are tailored to individual needs, with a strong emotional support for patients & families.</div>
             </div>
 
             <div class="card">
-                <div class="brief">Legacy of Trust & Excellence</div>
+                <div class="brief"  style="color: teal;">Legacy of Trust & Excellence</div>
                 <div class="details">Built on years of dedication and excellence, our hospital has earned the trust of the community through consistent quality care. Our team works tirelessly to uphold our reputation by embracing innovation, maintaining high standards</div>
             </div>
 
             <div class="card">
-                <div class="brief">Built on Values of Trust & Compassion</div>
+                <div class="brief"  style="color: teal;">Built on Values of Trust & Compassion</div>
                 <div class="details">Our hospital stands on the core values of honesty and responsibility. From the moment you enter Global Care, you are welcomed into a space that respects your concerns, and ensures the highest quality of care at every step.</div>
             </div>
         </div>
@@ -115,7 +115,7 @@
 
     <section style=" border: 1px solid transparent;" id="department">
         <div class="container mt-5" id="department">
-            <h2 class="text-center md-2" style="margin-top: 5% ;color: #479fcf;">Centers of Excellence</h2>
+            <h2 class="text-center md-2" style="margin-top: 6% ;">Centers of Excellence</h2>
                 <div class="row  d-flex flex-row flex-lg-row flex-md-row flex-sm-row  flex-xl-row
                 justify-content-around align-items-center p-2 mt-2 mb-2">
                     <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 " >
@@ -124,7 +124,7 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/cardiology-5.png" alt=""
                             >
-                        <h4>Cardiology</h4>
+                        <h4 style="color: teal;">Cardiology</h4>
                         </a>
                     </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 ">
@@ -134,7 +134,7 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Neuro-Surgery-4.png" alt=""
                             >
-                        <h4>Neurology</h4>
+                        <h4 style="color: teal;">Neurology</h4>
                     </a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 ">
@@ -144,7 +144,7 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Orthopedics-4.png" alt=""
                             >
-                        <h4>Orthopedics</h4>
+                        <h4 style="color: teal;">Orthopedics</h4>
                     </a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 ">
@@ -154,7 +154,7 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Gynaecology-4.png" alt=""
                             >
-                        <h4>Gynaecology</h4>
+                        <h4 style="color: teal;">Gynaecology</h4>
                     </a>
                 </div>
             </div>
@@ -167,7 +167,7 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Paediatrics-4.png" alt=""
                             >
-                        <h4>Pediatrics</h4>
+                        <h4 style="color: teal;">Pediatrics</h4>
                     </a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 ">
@@ -177,7 +177,7 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Dermatology-4.png" alt=""
                           >
-                        <h4>Dermatology</h4>
+                        <h4 style="color: teal;">Dermatology</h4>
                     </a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 ">
@@ -187,7 +187,7 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Dental-4.png" alt=""
                            >
-                        <h4>Dental</h4>
+                        <h4 style="color: teal;">Dental</h4>
                     </a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 ">
@@ -197,7 +197,7 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Radiology-4.png" alt=""
                             >
-                        <h4>Radiology</h4>
+                        <h4 style="color: teal;">Radiology</h4>
                     </a>
                 </div>
             </div>
@@ -210,17 +210,14 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Nephrology-4.png" alt=""
                         >
-                        <h4>Nephrology</h4>
+                        <h4 style="color: teal;">Nephrology</h4>
                     </a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 " style="">
-                    <a href="Gastro.html"
-                        class="d-flex
-                flex-column  flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-content-around align-items-center p-2"
-                        style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
-                        <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Gastroenterology-4.png"
-                            alt="">
-                        <h4>Gastroenterology</h4>
+                    <a href="Gastro.html" class="d-flex
+                    flex-column  flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-content-around align-items-center p-2" style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
+                        <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Gastroenterology-4.png" alt="" style="">
+                        <h4 style="color: teal;">Gastroenterology</h4>
                     </a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 ">
@@ -229,7 +226,7 @@
                 flex-column  flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-content-around align-items-center p-2"
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/ENT-4.png" alt="" style="">
-                        <h4>ENT</h4>
+                        <h4 style="color: teal;">ENT</h4>
                     </a>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 p-2 box1 ">
@@ -239,158 +236,137 @@
                         style="text-decoration: none; border: 2px solid #9fd6ea; border-radius:10px; color: teal;">
                         <img src="https://kaminenihospitals.com/wp-content/uploads/2023/07/Pulmonology-4.png" alt=""
                            >
-                        <h4>Pulmonology</h4>
+                        <h4 style="color: teal;">Pulmonology</h4>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container py-5" id="doctor">
-        <h2 class="text-center mb-4 " style="color: #479fcf;">Our Doctors</h2>
+    <section class="container py-5" id="doctor" style="margin-top: 5%;">
+        <h2 class="text-center mb-4 " style="margin-top: 5%;">Our Doctors</h2>
         <div class="row g-4">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="doctor-card p-3 shadow-sm text-center rounded">
                     <img src="./src/1-1.jpg" class="image rounded" alt="">
-                    <h5 class="mt-3">Dr. Harsha Vardhan</h5>
-                    <p class="text-muted">Cardiologist</p>
+                    <h5 class="mt-3">Dr. Kumar</h5>
+                    <p class="text-muted">Gastroenterologist</p>
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="doctor-card p-3 shadow-sm text-center rounded">
-                    <img src="./src/1-2.jpg" class="image rounded" alt="">
-                    <h5 class="mt-3">Dr. Priya Rao</h5>
-                    <p class="text-muted">Cardiologist</p>
+                    <img src="./src/2-1.jpg" class="image rounded" alt="">
+                    <h5 class="mt-3">Dr. Sandeep Iyer</h5>
+                    <p class="text-muted">ENT</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="doctor-card p-3 shadow-sm text-center rounded">
-                    <img src="./src/1-3.jpg" class="image rounded" alt="">
-                    <h5 class="mt-3">Dr. Ramesh Kumar</h5>
+                    <img src="./src/3-1.jpg" class="image rounded" alt="">
+                    <h5 class="mt-3">Dr. Prataap Reddy</h5>
+                    <p class="text-muted">Gastroenterologist</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="doctor-card p-3 shadow-sm text-center rounded">
+                    <img src="./src/4-1.jpg" class="image rounded" alt="">
+                    <h5 class="mt-3">Dr. Aftab</h5>
+                    <p class="text-muted">Radiologist</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="doctor-card p-3 shadow-sm text-center rounded">
+                    <img src="./src/5-1.jpg" class="image rounded" alt="">
+                    <h5 class="mt-3">Dr. Ramesh</h5>
+                    <p class="text-muted">Nephrologist</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="doctor-card p-3 shadow-sm text-center rounded">
+                    <img src="./src/6-1.jpg" class="image rounded" alt="">
+                    <h5 class="mt-3">Dr. Anil</h5>
                     <p class="text-muted">Orthopedic Surgeon</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="doctor-card p-3 shadow-sm text-center rounded">
-                    <img src="./src/1-4.jpg" class="image rounded" alt="">
-                    <h5 class="mt-3">Dr. Anjali Menon</h5>
-                    <p class="text-muted">Pediatrician</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="doctor-card p-3 shadow-sm text-center rounded">
-                    <img src="./src/2-1.jpg" class="image rounded" alt="">
-                    <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                    <p class="text-muted">Dermatologist</p>
+                    <img src="./src/1-2.jpg" class="image rounded" alt="">
+                    <h5 class="mt-3">Dr. Surya Narayana</h5>
+                    <p class="text-muted">Pulmonologist</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="doctor-card p-3 shadow-sm text-center rounded">
                     <img src="./src/2-2.jpg" class="image rounded" alt="">
-                    <h5 class="mt-3">Dr. Priya Rao</h5>
-                    <p class="text-muted">Cardiologist</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="doctor-card p-3 shadow-sm text-center rounded">
-                    <img src="./src/2-3.jpg" class="image rounded" alt="">
-                    <h5 class="mt-3">Dr. Ramesh Kumar</h5>
+                    <h5 class="mt-3">Dr. Kharan</h5>
                     <p class="text-muted">Orthopedic Surgeon</p>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="doctor-card p-3 shadow-sm text-center rounded">
-                    <img src="./src/2-4.jpg" class="image rounded" alt="">
-                    <h5 class="mt-3">Dr. Anjali Menon</h5>
-                    <p class="text-muted">Pediatrician</p>
-                </div>
-            </div>     
+               
 
             <div id="extraContent" style="display: none;">
             <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/3-1.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                            <p class="text-muted">Dermatologist</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/3-2.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                            <p class="text-muted">Dermatologist</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/3-3.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                            <p class="text-muted">Dermatologist</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/3-4.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                            <p class="text-muted">Dermatologist</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/5-1.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                            <p class="text-muted">Dermatologist</p>
-                        </div>
-                    </div>
-                            
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/5-2.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Priya Rao</h5>
-                            <p class="text-muted">Cardiologist</p>
-                        </div>
-                    </div>
-                 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/5-3.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Ramesh Kumar</h5>
-                            <p class="text-muted">Orthopedic Surgeon</p>
-                        </div>
-                    </div>
                     
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/5-4.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Anjali Menon</h5>
-                            <p class="text-muted">Pediatrician</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/4-1.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                            <p class="text-muted">Dermatologist</p>
+                            <img src="./src/3-2.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Akhila</h5>
+                            <p class="text-muted">Neurologist</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="doctor-card p-3 shadow-sm text-center rounded">
                             <img src="./src/4-2.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Priya Rao</h5>
+                            <h5 class="mt-3">Dr. Eswar</h5>
+                            <p class="text-muted">Dentist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/5-2.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Bharat</h5>
+                            <p class="text-muted">Neurologist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/6-2.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Sairam</h5>
+                            <p class="text-muted">Nephrologist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/1-3.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Abdul Jabbar</h5>
+                            <p class="text-muted">Dentist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/2-3.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Sriram Azaad</h5>
+                            <p class="text-muted">Pediatrician</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/3-3.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Harsha Vardhan</h5>
                             <p class="text-muted">Cardiologist</p>
                         </div>
                     </div>
@@ -398,66 +374,101 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="doctor-card p-3 shadow-sm text-center rounded">
                             <img src="./src/4-3.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Ramesh Kumar</h5>
-                            <p class="text-muted">Orthopedic Surgeon</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/4-4.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Anjali Menon</h5>
-                            <p class="text-muted">Pediatrician</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/6-1.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
+                            <h5 class="mt-3">Dr. Sidharth</h5>
                             <p class="text-muted">Dermatologist</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="doctor-card p-3 shadow-sm text-center rounded">
-                            <img src="./src/6-2.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                            <p class="text-muted">Dermatologist</p>
+                            <img src="./src/5-3.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Likhita</h5>
+                            <p class="text-muted">Gynaecologist</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="doctor-card p-3 shadow-sm text-center rounded">
                             <img src="./src/6-3.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
+                            <h5 class="mt-3">Dr. Chakrapani</h5>
+                            <p class="text-muted">Pediatrician</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/1-4.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Devi</h5>
                             <p class="text-muted">Dermatologist</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/2-4.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Pardhu</h5>
+                            <p class="text-muted">Cardiologist</p>
+                        </div>
+                    </div>  
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/3-4.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Sharon Rose</h5>
+                            <p class="text-muted">Gynaecologist</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/5-4.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Basha</h5>
+                            <p class="text-muted">Radiologist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
+                            <img src="./src/4-4.jpg" class="image rounded" alt="">
+                            <h5 class="mt-3">Dr. Kiran</h5>
+                            <p class="text-muted">ENT</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="doctor-card p-3 shadow-sm text-center rounded">
                             <img src="./src/6-4.jpg" class="image rounded" alt="">
-                            <h5 class="mt-3">Dr. Sandeep Iyer</h5>
-                            <p class="text-muted">Dermatologist</p>
+                            <h5 class="mt-3">Dr. Mahesh</h5>
+                            <p class="text-muted">Pulmonologist</p>
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-5">
+                    <button type="button" class="btn " onclick="
+                    document.getElementById('extraContent').style.display='none';
+                    document.getElementById('seeMoreBtn').style.display='inline-block';
+                    " style="color: teal;">
+                    See Less
+                    </button>
+                </div>
             </div>
-                <div class="text-center mt-3">
-                <button type="button" class="btn btn-primary" onclick="document.getElementById('extraContent').style.display='block'; this.style.display='none';">
-                    See More
-                </button>
+                <div class="text-center mt-5">
+                    <button id="seeMoreBtn" type="button" class="btn " onclick="
+                        document.getElementById('extraContent').style.display='block';
+                        this.style.display='none';
+                    " style="color: teal;">
+                        See More
+                    </button>
                 </div>
             
 
         </div>
-    </div>
+    </section>
 
-    <section id="service">
+    <section id="service" style="margin-top: 5%;">
 
         <div class="container">
-            <h1 class="text-center mt-5 mb-5" style="color: #479fcf;">Services</h1>
+            <h1 class="text-center mt-5 mb-5" style="margin-top: 5%;">Services</h1>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card text-center p-2 box2">
@@ -495,8 +506,24 @@
         </div>
     </section>
 
-    <section class="awareness-section" id="awareness">
-    <h2>Health Awareness & Emergency Tips</h2>
+    <section id="contact" style="margin-top: 5%;">
+        <div class="container">
+            <div class="row" style="padding-top: 5%;">
+                <div class="col-12 col-lg-6">
+                    <h2 >Contact Us</h2>
+                    <p><strong>Address:</strong> Siddrstha, 1st Ln, opp. Modrenfoods, Mogalrajapuram, Christurajupuram, Vijayawada, Andhra Pradesh 520010</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p><strong>Email:</strong> contactus@globalcarehms.com</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d744.6553215923846!2d80.64797336949397!3d16.5065722990149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fab1458cf63b%3A0xfe7738e67698fd0e!2sK.V.R%20Complex!5e1!3m2!1sen!2sin!4v1763199883529!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awareness-section" id="awareness" style="margin-top: 5%;">
+    <h2 style="color: #00bf7d; padding-top: 5%;">Health Awareness & Emergency Tips</h2>
 
     <div class="awareness-container">
 
@@ -536,6 +563,96 @@
 
     </div>
 </section>
+
+    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row g-4">
+          
+          <div class="col-auto">
+            <div class="card shadow">
+              <img src="./src/t1.jpg" class="card-img-top" alt="">
+              <div class="card-body text-center">
+                <h5 class="card-title">Neurology</h5>
+                <p class="card-text">I was treated for a serious neurological issue, and today I feel stronger and more confident than ever. The doctors explained everything clearly and supported me throughout my recovery.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="card shadow">
+              <img src="./src/t2.jpg" class="card-img-top" alt="">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dental</h5>
+                <p class="card-text">I was nervous about my dental issues, but the doctors made me feel completely comfortable. Now my teeth feel healthier, and my smile is brighter than before.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="card shadow">
+              <img src="./src/t3.png" class="card-img-top" alt="">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dermatology</h5>
+                <p class="card-text">I was facing skin problems for a long time, and now my skin feels healthy and glowing. The dermatologist really understood my concerns and treated me with great care.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ⭐ Slide 2 -->
+      <div class="carousel-item">
+        <div class="row g-4">
+
+          <div class="col-auto">
+            <div class="card shadow">
+              <img src="./src/t4.jpg" class="card-img-top" alt="">
+              <div class="card-body text-center">
+                <h5 class="card-title">Pediatrics</h5>
+                <p class="card-text">I’m feeling much better now! The doctor was very friendly and made me smile even when I was scared. Thank you for making me healthy again!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="card shadow">
+              <img src="./src/t5.png" class="card-img-top" alt="">
+              <div class="card-body text-center">
+                <h5 class="card-title">Trauma Care</h5>
+                <p class="card-text">I came here after a major accident, and the trauma care team saved my life. Their quick treatment and constant monitoring helped me recover faster than expected.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="card shadow">
+              <img src="./src/t6.jpg" class="card-img-top" alt="">
+              <div class="card-body text-center">
+                <h5 class="card-title">Orthopedics</h5>
+                <p class="card-text">I had severe joint pain that made it hard to walk. After receiving treatment here, I can move freely again. I'm deeply thankful for the care and patience the orthopedic team showed.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
 
 
     <footer class="container-fluid">
@@ -612,15 +729,12 @@
             <div class="col-12 col-sm-12 col-md-3 col-lg-3 d-flex flex-column">
                 <h2>Chief Head</h2>
                 <h3>Ambica Kiranmayee B</h3>
-                <a href="https://www.linkedin.com/in/bharat-n-bsn41003/" class="d-flex flex-row align-items-center">
+                <a href="https://www.linkedin.com/in/ambica-kiranmayee-bellamkonda-203861200/" class="d-flex flex-row align-items-center">
                     <i class="fa-brands fa-linkedin"></i>
                     <h6 style="padding-top: 4%;">LinkedIn</h6>
                 </a>
-                <a href="https://www.linkedin.com/in/bharat-n-bsn41003/" class="d-flex flex-row align-items-center">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <h6 style="padding-top: 4%;">LinkedIn</h6>
-                </a>
-            </div>f
+                
+            </div>
         </div>
         <div class="text-center mt-5">
             <p>&copy; 2025 Global Care Hospital. All rights reserved.</p>

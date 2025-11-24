@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="visit.css">
+</head>
+<body>
+    <section class="visit-section">
+    <div class="mydata">
+    <form class="myform">
+        <h1 style="color: #479fcf;">OP Form</h1>
+
+        <label>Patient Name</label>
+        <input type="text" placeholder="Eg:Ravi" required />
+
+        <label>Age</label>
+        <input type="number" placeholder="Eg:23" required />
+
+        <label>Gender</label>
+        <input type="text" placeholder="Eg:Male"required />
+
+        <label>Mobile Number</label>
+        <input type="text" placeholder="Eg:1234567890" required />
+
+        <label>Primary Symptom</label>
+        <select form-control class="symptoms" required>
+             <option value="" disabled selected>-- select --</option>
+             <option value="abdominal pain">Abdominal pain</option>
+             <option value="chest-pain">Chest Pain</option>
+             <option value="dehydration">Dehydration</option>
+             <option value="dizziness">Dizziness</option>
+            <option value="fever">Fever</option>
+            <option value="injury">Injury</option>
+            <option value="insomnia">Insomnia</option>
+            <option value="Shortness of breath">Shortness of breath</option>
+            <option value="severe headache">Severe Headache</option>
+        </select>
+
+        <label>Duration of symptom</label>
+        <input type="text" placeholder="Eg:1 day" required />
+
+    </form>
+    </div>
+    <div class="image">
+        <img src="./src/opform.jpg" alt=""  style="float: right;"/>
+    </div>
+</section>
+</body>
+</html>

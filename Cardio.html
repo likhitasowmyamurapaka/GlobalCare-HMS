@@ -11,6 +11,16 @@
     />
     <link rel="icon" href="./src/favicon.png"/>
     <title>Global Care - Your Final Destination</title>
+    <style>
+      .nav-tabs .nav-link:not(.active) {
+        color: teal; 
+      }
+
+      
+      .nav-tabs .nav-link:not(.active):hover {
+        color: #0d6efd; 
+      }
+    </style>
     <script
       src="https://kit.fontawesome.com/452e16b726.js"
       crossorigin="anonymous"
@@ -18,81 +28,50 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="z-index: 10; background-color: azure; width: 100vw; height: auto"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./src/logo-removebg4.png" alt="" width="auto" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html#home"
-                style="color: royalblue"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#about" style="color: royalblue"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#department" style="color: royalblue"
-                >Departments</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#doctor" style="color: royalblue"
-                >Doctors</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#service" style="color: royalblue"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" style="color: royalblue"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <div class="d-flex me-3">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#emergency" style="color: royalblue"
-                  >Emergency</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="./appointment.html"
-                  style="color: royalblue"
-                  >Appointment</a
-                >
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 10; background-color: azure; width: 100vw;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./src/logo.png" alt="" width="140" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: royalblue;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about" style="color: royalblue;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#department" style="color: royalblue;">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#doctor" style="color: royalblue;">Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#service" style="color: royalblue;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact" style="color: royalblue;">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#emergency" style="color: royalblue;">Emergency</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Appointment.html" style="color: royalblue;">Appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
     <h1 class="text-center" style="padding-top: 7%">
       Welcome to the Cardiology Department
@@ -310,10 +289,25 @@
         </div>
       </div>
     </div>
-    <div class="container-fulid">
-      <div class="row">
-        <div class="col text-center">
-          <h2>Doctors section</h2>
+  
+      <div class="container py-5" id="doctor">
+        <h2 class="text-center mb-4 " style="color: #479fcf;">Our Doctors</h2>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="doctor-card p-3 shadow-sm text-center rounded">
+                    <img src="./src/2-4.jpg" class="image rounded" alt="">
+                    <h5 class="mt-3">Dr. Pardhu</h5>
+                    <p class="text-muted">Cardiologist</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="doctor-card p-3 shadow-sm text-center rounded">
+                    <img src="./src/3-3.jpg" class="image rounded" alt="">
+                    <h5 class="mt-3">Dr. Harsha Vardhan</h5>
+                    <p class="text-muted">Cardiologist</p>
+                </div>
+            </div>
         </div>
       </div>
     </div>

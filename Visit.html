@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OP Register</title>
+    <link rel="icon" href="./src/favicon.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="visit.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 10; background-color: azure; width: 100vw;">
@@ -56,9 +56,14 @@
         </div>
     </nav>
 
+
     <section class="visit-section">
+        
+    <div id="success-message" class="success-box">
+    Successfully Registered! Redirecting to Home...
+    </div>
     <div class="mydata">
-    <form class="myform">
+    <form class="myform" onsubmit="showSuccess(event)">
         <h1 style="color: #479fcf;">OP Form</h1>
 
         <label>Patient Name</label>
@@ -90,12 +95,15 @@
         <label>Duration of symptom</label>
         <input type="text" placeholder="Eg:1 day" required />
 
+        <button type="submit" class="btn">Register</button>
+
     </form>
     </div>
     <div class="image">
         <img src="./src/opform.jpg" alt=""  style="float: right;"/>
     </div>
 </section>
+
 <footer class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-3 col-lg-3 d-flex flex-column">
@@ -182,8 +190,18 @@
         </div>
     </footer>
 
+    <script>
+function showSuccess(e){
+    e.preventDefault(); 
+    document.getElementById("success-message").style.display = "block";
+    setTimeout(()=> location.href="index.html", 3000);
+}
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+
+
 </body>
 </html>

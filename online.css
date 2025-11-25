@@ -57,12 +57,10 @@
     border:1px solid grey;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
 .btn2:hover{
     border:1px solid #479fcf;
-    
 }
 
 .btn2:active{

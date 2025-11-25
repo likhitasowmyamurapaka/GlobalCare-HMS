@@ -3,6 +3,18 @@
     /* border:1px solid black; */
 }
 
+.success-box {
+    display: none;
+    background: #e6fff5;
+    border-left: 5px solid #00a67d;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #008060;
+    border-radius: 5px;
+}
+
+
 .visit-section{
     display: flex;
     align-items: center;
@@ -45,10 +57,22 @@
     margin-bottom: 2%;
 }
 
-.btn a{
+/* .btn a{
     text-decoration: none;
     color: white;
     font-size: 16px;
+} */
+
+.btn:hover{
+    color:#479fcf;
+    border:1px solid #479fcf;
+    background-color: white;
+}
+
+.btn:active{
+    color:white;
+    background-color: #479fcf;
+    /* border: none; */
 }
 
 .tests{
@@ -84,7 +108,7 @@ select {
 @media all and (min-width:576px) and (max-width:768px){
     .myform{
         height: 60%;
-        padding-right: 10%;   
+        padding-right: 10%;  
     }
     .image{
         display:none;
@@ -98,7 +122,6 @@ select {
     .mydata{
         width:80%;
     }
-
 }
 
 footer{

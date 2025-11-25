@@ -88,6 +88,36 @@ h1,h2,h3,h4,h5,h6{
     }
 } */
 
+html {
+  scroll-padding-top: 90px; /* Height of navbar */
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 60px;   /* Good spacing */
+  padding-bottom: 40px;
+  margin: 0;           /* No unwanted gap */
+}
+
+section h1, 
+section h2, 
+section h3 {
+    margin-top: 0;    /* Removes browser default margin */
+}
+
+
+/* Global section styling */
+.section-block {
+    padding-top: 80px;   /* spacing inside section */
+    padding-bottom: 40px;
+    scroll-margin-top: 90px; /* NAVBAR height for correct scrolling */
+}
+
+/* Remove any unwanted margin */
+.section-block h2 {
+    margin: 0 0 20px 0; /* h2 bottom only */
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -203,20 +233,26 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
-
+#deparment h4{
+    color: teal;
+}
 .services{
-    aspect-ratio: 3/3;
+    aspect-ratio: 4/3;
     width: 70%;
 }
 
 #service{
-    padding: 20px;
+    /* padding: 20px; */
+    margin-top: 5%;
+    margin-bottom: 7%;
+    height:auto;
 }
 
 #service a{
     text-decoration: none;
-    color:#479fcf;
+    color:teal;
 }
+
 
 .awareness-section {
     padding: 50px 10%;
@@ -379,13 +415,35 @@ img:hover{
     #department img{
         width: 40%;   
     }
-    .box a{
-    border: 1px solid blueviolet;
+    .box1 a{
+    /* border: 1px solid blueviolet; */
     display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-around;
+    }
+    .box1 h4{
+        font-size: medium;
+    }
+    .dif{
+    /* border: 3px solid yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+    }
+    
+.box2{
+    /* border: 3px double khaki; */
+    box-shadow: 0 4px 8px 0 #007AB4;
+    border-radius: 20px;
+    width: 80%;
+    /* height:100%; */
+    margin:2%;
+    background-color: white;
+    /* padding: 10px; */
+    /* border:1px solid red; */
 }
 }
 @media all and (min-width: 579px) and (max-width: 768px){
@@ -397,11 +455,38 @@ img:hover{
         width:25%;
     }
     .box1 a{
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-around;
+
+}
+.box1 h4{
+    font-size: medium;
+}
+.dif{
+    /* border: 3px solid yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box2{
+    /* border: 3px double khaki; */
+    box-shadow: 0 4px 8px 0 #007AB4;
+    border-radius: 20px;
+    width: 60%;
+    height:90%;
+    margin:2%;
+    background-color: white;
+    /* padding: 10px; */
+    /* border:1px solid red; */
+}
+.c4{
+    aspect-ratio: 8/8;
+    /* border: 1px solid red; */
 }
 }
 @media all and (min-width: 769px) and (max-width: 992px){
@@ -420,7 +505,35 @@ img:hover{
     flex-direction:row;
     align-items: center;
     justify-content: space-around;
+
+    
 }
+.dif{
+    /* border: 3px solid yellowgreen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box2{
+    /* border: 3px double khaki; */
+    box-shadow: 0 4px 8px 0 #007AB4;
+    border-radius: 20px;
+    width: 20%;
+    height:90%;
+    margin:2%;
+    padding: 2% 0%;
+    background-color: white;
+    /* padding: 10px; */
+    /* border:1px solid red; */
+}
+.c4{
+    aspect-ratio: 5/5;
+    /* border: 1px solid red; */
+    /* height: 200%; */
+}
+
 }
 @media all and (min-width: 993px) and (max-width: 1200px){
     #department img{
@@ -437,6 +550,33 @@ img:hover{
     align-items: center;
     justify-content: space-around;
     }
+    .box1 h4{
+        font-size: large;
+    }
+    .dif{
+    /* border: 3px solid yellowgreen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.c3{
+    aspect-ratio: 3/1.6;
+}
+
+.box2{
+    /* border: 3px doublx   e khaki; */
+    box-shadow: 0 4px 8px 0 #007AB4;
+    border-radius: 20px;
+    width: 20%;
+    height:90%;
+    margin:2%;
+    padding: 2% 0%;
+    background-color: white;
+    /* padding: 10px; */
+    /* border:1px solid red; */
+}
 }
 @media all and (min-width: 1201px){
     #department img{
@@ -447,12 +587,34 @@ img:hover{
         width:22%;
     }
     .box1 a{
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-around;
     }
+
+    .dif{
+    /* border: 3px solid yellowgreen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        
+    }
+    
+.box2{
+    /* border: 3px double blue; */
+    box-shadow: 0 4px 8px 0 #007AB4;
+    border-radius: 20px;
+    width: 21%;
+    height:100%;
+    margin:2%;
+    padding: 2% 0%;
+    background-color: white;
+    /* padding: 10px; */
+    /* border:1px solid red; */
+}
 }
 
     .carousel-control-prev,
